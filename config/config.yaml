@@ -1,0 +1,11 @@
+jobs:
+   - name: Batch-01
+     sourceFile: ./samples/person.dat
+     mappings:
+       - name: firstname
+         start_position: 0
+         end_position: 13
+       - name: lastname
+         start_position: 14
+         end_position: 29 
+     targetFile: ./output/person.out
