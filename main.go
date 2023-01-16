@@ -21,6 +21,6 @@ func main() {
 		log.Fatalln(err.Error())
 		os.Exit(1)
 	}
-	status := dataloader.LoadAndWriteOtherFile(batchjob.SourceFile, batchjob.TargetFile, batchjob.Mappings)
+	status := dataloader.LoadAndWriteToOtherFile(batchjob.SourceFile, batchjob.TargetFile, batchjob.Mappings)
 	log.Printf("the status of data loading is %s\n", status)
 }
