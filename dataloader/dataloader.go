@@ -18,7 +18,7 @@ const (
 	FAILED  = "failed"
 )
 
-func LoadAndWriteOtherFile(sourceFilePath string, targetFilePath string, fieldMappings []models.FieldMapping) string {
+func LoadAndWriteToOtherFile(sourceFilePath string, targetFilePath string, fieldMappings []models.FieldMapping) string {
 	beam.Init()
 	pipeline, scope := beam.NewPipelineWithRoot()
 	dataRowsFromSourceFile := textio.Read(scope, sourceFilePath)
