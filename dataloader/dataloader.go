@@ -18,6 +18,7 @@ const (
 	FAILED  = "failed"
 )
 
+// To load data from source file and store it into the output file
 func LoadAndWriteToOtherFile(sourceFilePath string, targetFilePath string, fieldMappings []models.FieldMapping) string {
 	beam.Init()
 	pipeline, scope := beam.NewPipelineWithRoot()

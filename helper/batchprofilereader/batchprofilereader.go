@@ -10,6 +10,7 @@ import (
 	"github.com/lonecalvary78/data-loader-cli/models"
 )
 
+// Get the batch job from the external batch profiling file
 func GetProfileFor(profilerFilePath string, batchJobName string) (models.BatchJob, error) {
 	var batchProfile models.BatchProfile
 	contents, errorOnLoad := os.ReadFile(profilerFilePath)
