@@ -1,4 +1,4 @@
-module github.com/lonecalvary78/data-loader-cli
+module github.com/lonecalvary78/data-loading-cli
 
 go 1.19
 
