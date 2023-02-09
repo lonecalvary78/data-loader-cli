@@ -1,0 +1,16 @@
+name: Data Loading CLI - Unit Test
+on:
+  push:
+    branches:
+      - main
+jobs:
+  unit-testing:
+  runs-on: ubuntu
+  steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-go@v3
+      with:
+        go-version: 1.20
+        check-latest: true
+        cache: true
+    - run: go test ./...
