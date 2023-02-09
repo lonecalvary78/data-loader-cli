@@ -3,8 +3,8 @@ package dataloader_test
 import (
 	"testing"
 
-	"github.com/lonecalvary78/data-loader-cli/dataloader"
-	"github.com/lonecalvary78/data-loader-cli/helper/batchprofilereader"
+	"github.com/lonecalvary78/data-loading-cli/dataloader"
+	"github.com/lonecalvary78/data-loading-cli/helper/batchprofilereader"
 	"github.com/stretchr/testify/assert"
 )
 

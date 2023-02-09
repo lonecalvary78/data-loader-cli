@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/goccy/go-yaml"
-	"github.com/lonecalvary78/data-loader-cli/models"
+	"github.com/lonecalvary78/data-loading-cli/models"
 )
 
 // Get the batch job from the external batch profiling file

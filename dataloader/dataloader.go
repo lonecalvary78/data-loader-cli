@@ -10,7 +10,7 @@ import (
 	_ "github.com/apache/beam/sdks/v2/go/pkg/beam/io/filesystem/local"
 	"github.com/apache/beam/sdks/v2/go/pkg/beam/io/textio"
 	"github.com/apache/beam/sdks/v2/go/pkg/beam/runners/direct"
-	"github.com/lonecalvary78/data-loader-cli/models"
+	"github.com/lonecalvary78/data-loading-cli/models"
 )
 
 const (
