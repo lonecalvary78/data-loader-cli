@@ -1,0 +1,17 @@
+name: Data Loading CLI - Build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version: 1.19.5
+          check-latest: true
+      - run: go get ./...    
+      - name: build
+        run: go build ./...    
