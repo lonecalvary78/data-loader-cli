@@ -12,7 +12,7 @@ jobs:
         with:
           go-version: 1.20
           check-latest: true
-      - name: download dependencies
-        run: go get github.com/lonecalvary78/data-loading-cli     
+      - name: build
+        run: go build -v ./...     
       - name: perform unit test
-        run: go test ./...
+        run: go test -v ./...
