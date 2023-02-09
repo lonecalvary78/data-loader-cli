@@ -8,7 +8,7 @@ import (
 )
 
 func TestReadBatchProfile(t *testing.T) {
-	batchjob, _ := batchprofilereader.GetProfileFor("{root}/config/config.yaml", "Batch-01")
+	batchjob, _ := batchprofilereader.GetProfileFor("./config/config.yaml", "Batch-01")
 	assert.Equal(t, "Batch-01", batchjob.Name)
 	assert.Equal(t, "firstname", batchjob.Mappings[0].FieldName)
 	assert.Equal(t, 0, batchjob.Mappings[0].StartPosition)
@@ -20,6 +20,6 @@ func TestReadBatchProfile(t *testing.T) {
 
 func BenchmarkReadBatchProfile(b *testing.B) {
 	for counter := 0; counter < b.N; counter++ {
-		batchprofilereader.GetProfileFor("{root}/config/config.yaml", "Batch-01")
+		batchprofilereader.GetProfileFor("./config/config.yaml", "Batch-01")
 	}
 }
