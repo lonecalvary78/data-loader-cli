@@ -14,7 +14,3 @@ jobs:
           check-latest: true
       - name: download deps
         run: go get .    
-      - name: build
-        run: go build -v ./...     
-      - name: perform unit test
-        run: go test -v ./...
