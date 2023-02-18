@@ -1,4 +1,4 @@
-![latest build](https://github.com/lonecalvary78/data-loading-cli/actions/workflows/test-and-test-ci.yml/badge.svg)
+![latest build](https://github.com/lonecalvary78/data-loading-cli/actions/workflows/test-and-build-ci.yml/badge.svg)
 
 ## Data Loader CLI
 
